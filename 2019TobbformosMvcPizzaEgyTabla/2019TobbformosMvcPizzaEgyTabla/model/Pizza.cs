@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace TobbbformosPizzaAlkalmazasEgyTabla.Model
 {
     partial class Pizza
-    {
+    { 
         private int id;
         private string name;
         private int price;
