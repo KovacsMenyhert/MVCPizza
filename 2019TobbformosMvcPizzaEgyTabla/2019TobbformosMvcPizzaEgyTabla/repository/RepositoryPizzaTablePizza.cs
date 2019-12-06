@@ -20,18 +20,9 @@ namespace TobbbformosPizzaAlkalmazasEgyTabla.Repository
         /// </summary>
         public RepositoryDatabaseTablePizza()
         {
-            connectionStringCreate =
-                "SERVER=\"localhost\";"
-                + "DATABASE=\"test\";"
-                + "UID=\"root\";"
-                + "PASSWORD=\"\";"
-                + "PORT=\"3306\";";
-            connectionString =
-                "SERVER=\"localhost\";"
-                + "DATABASE=\"csarp\";"
-                + "UID=\"root\";"
-                + "PASSWORD=\"\";"
-                + "PORT=\"3306\";";
+            ConnectionString cs = new ConnectionString();
+            connectionStringCreate = cs.getConnectionString();
+            connectionString = cs.getConnectionString();
         }
 
         /// <summary>
